@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>    <h1>Type as much CSS properties as you can in 3 minutes</h1>
+      <p>Good luck !</p>
+    </header>
+    <form id="formGame">
+      <label for="name"></label>
+      <input
+        name="text"
+        class="inputGame--global"
+        id="inputGame"
+        value=""
+        type="text"
+        onselectstart="return false"
+        onpaste="return false"
+        onCopy="return false"
+        onCut="return false"
+        onDrag="return false"
+        onDrop="return false"
+        autocomplete="off"
+        onblur="this.focus()"
+        autofocus
+      />
+<input type="button" name="start game" id="startGame" value="Start game">
+      <input type="submit" name="button" id="buttonGame" value="Submit" disabled/>
+      <input
+        type="submit"
+        name="button"
+        id="buttonRestartGame"
+        value="Restart Game"
+      />
+    </form>
+    <p id="timerPar">
+    </p>
+    <div id="scoreRender"></div>
+    <div class="resultsContainer"></div>
+</script>
+    <script src="arr.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
